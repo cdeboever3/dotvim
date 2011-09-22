@@ -1,5 +1,8 @@
 " ~/.vimrc (configuration file for vim only)
 " skeletons
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 function! SKEL_spec()
 	0r /usr/share/vim/current/skeletons/skeleton.spec
 	language time en_US
