@@ -1,6 +1,7 @@
 " ~/.vimrc (configuration file for vim only)
 " skeletons
 call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 call pathogen#helptags()
 
 function! SKEL_spec()
@@ -36,7 +37,7 @@ function! SKEL_spec()
 endfunction
 autocmd BufNewFile	*.spec	call SKEL_spec()
 " filetypes
-filetype plugin on
+:filetype plugin on
 filetype indent on
 set background=dark
 au Filetype python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
