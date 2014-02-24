@@ -36,10 +36,25 @@ function! SKEL_spec()
 	setf spec
 endfunction
 autocmd BufNewFile	*.spec	call SKEL_spec()
+
 " filetypes
 :filetype plugin on
 filetype indent on
 set background=dark
 au Filetype python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 set number
+set ruler
+syntax on
+
+" highlight text over 80 columns
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%>80v.\+/
+
+" stuff for vim-latex
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor='latex'
+
 " ~/.vimrc ends here
+
+
+
