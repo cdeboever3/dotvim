@@ -7,7 +7,7 @@ configuration.
 
 Clone repository:
 
-    git clone git://github.com/cdeboever/dotvim.git ~/.vim
+    git clone https://github.com/cdeboever3/dotvim.git ~/.vim
 
 Create symlinks:
 
