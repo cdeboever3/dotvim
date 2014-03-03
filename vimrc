@@ -52,9 +52,15 @@ match OverLength /\%>80v.\+/
 
 " stuff for vim-latex
 set grepprg=grep\ -nH\ $*
-let g:tex_flavor='latex'
+
+" Compiler and viewer settings
+let g:tex_flavor='latex'  
+let g:Tex_CompileRule_pdf = 'pdflatex --synctex=-1 -src-specials -interaction=nonstopmode -file-line-error-style $*'
+let g:Tex_DefaultTargetFormat='pdf'
+let g:Tex_MultipleCompileFormats='pdf'
+let g:Tex_TreatMacViewerAsUNIX = 1
+let g:Tex_ExecuteUNIXViewerInForeground = 1
+let g:Tex_ViewRule_pdf =  'open -a Preview'
+"autocmd FileType tex call Tex_SetTeXCompilerTarget('View','pdf')
 
 " ~/.vimrc ends here
-
-
-
