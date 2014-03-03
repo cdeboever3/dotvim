@@ -1,12 +1,16 @@
 [submodule "bundle/csv"]
 	path = bundle/csv
 	url = https://github.com/chrisbra/csv.vim.git
+	ignore = dirty
 [submodule "bundle/Vim-R-plugin"]
 	path = bundle/Vim-R-plugin
 	url = https://github.com/jcfaria/Vim-R-plugin.git
+	ignore = dirty
 [submodule "bundle/vim-latex"]
 	path = bundle/vim-latex
 	url = http://git.code.sf.net/p/vim-latex/vim-latex
+	ignore = dirty
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+	ignore = dirty
