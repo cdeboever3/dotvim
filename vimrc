@@ -36,10 +36,33 @@ function! SKEL_spec()
 	setf spec
 endfunction
 autocmd BufNewFile	*.spec	call SKEL_spec()
+
 " filetypes
 :filetype plugin on
 filetype indent on
 set background=dark
 au Filetype python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
+
 set nu
+set number
+set ruler
+syntax on
+
+" highlight text over 80 columns
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%>80v.\+/
+
+" stuff for vim-latex
+set grepprg=grep\ -nH\ $*
+
+" Compiler and viewer settings
+let g:tex_flavor='latex'  
+let g:Tex_CompileRule_pdf = 'pdflatex --synctex=-1 -src-specials -interaction=nonstopmode -file-line-error-style $*'
+let g:Tex_DefaultTargetFormat='pdf'
+let g:Tex_MultipleCompileFormats='pdf'
+let g:Tex_TreatMacViewerAsUNIX = 1
+let g:Tex_ExecuteUNIXViewerInForeground = 1
+let g:Tex_ViewRule_pdf =  'open -a Preview'
+"autocmd FileType tex call Tex_SetTeXCompilerTarget('View','pdf')
+
 " ~/.vimrc ends here
