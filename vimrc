@@ -41,5 +41,5 @@ autocmd BufNewFile	*.spec	call SKEL_spec()
 filetype indent on
 set background=dark
 au Filetype python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
-set number
+set nu
 " ~/.vimrc ends here
