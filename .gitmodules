@@ -17,9 +17,6 @@
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
 	ignore = dirty
-[submodule "python-mode"]
-	path = python-mode
-	url = https://github.com/klen/python-mode.git
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode.git
