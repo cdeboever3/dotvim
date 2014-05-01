@@ -6,6 +6,10 @@
 	path = bundle/Vim-R-plugin
 	url = https://github.com/jcfaria/Vim-R-plugin.git
 	ignore = dirty
+[submodule "bundle/screen"]
+	path = bundle/screen
+	url = https://github.com/ervandew/screen.git
+	ignore = dirty
 [submodule "bundle/vim-latex"]
 	path = bundle/vim-latex
 	url = http://git.code.sf.net/p/vim-latex/vim-latex
