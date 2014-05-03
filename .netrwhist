@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/cdeboever/.ipython/profile_nbserver-ase'
-let g:netrw_dirhist_2='/raid2/projects/CD2014/.git'
-let g:netrw_dirhist_3='/raid2/projects/CD2014/software/samtools-0.1.19'
