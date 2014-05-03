@@ -40,7 +40,7 @@ autocmd BufNewFile	*.spec	call SKEL_spec()
 " filetypes
 filetype plugin indent on
 set background=dark
-au Filetype python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
+au Filetype python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 textwidth=80 smarttab
 
 set nu
 set number
