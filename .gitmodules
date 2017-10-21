@@ -10,10 +10,6 @@
 	path = bundle/screen
 	url = https://github.com/ervandew/screen.git
 	ignore = dirty
-[submodule "bundle/vim-latex"]
-	path = bundle/vim-latex
-	url = http://git.code.sf.net/p/vim-latex/vim-latex
-	ignore = dirty
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
