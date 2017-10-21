@@ -2,10 +2,6 @@
 	path = bundle/csv
 	url = https://github.com/chrisbra/csv.vim.git
 	ignore = dirty
-[submodule "bundle/Vim-R-plugin"]
-	path = bundle/Vim-R-plugin
-	url = https://github.com/jcfaria/Vim-R-plugin.git
-	ignore = dirty
 [submodule "bundle/screen"]
 	path = bundle/screen
 	url = https://github.com/ervandew/screen.git
