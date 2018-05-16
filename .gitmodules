@@ -6,7 +6,6 @@
 	path = bundle/screen
 	url = https://github.com/ervandew/screen.git
 	ignore = dirty
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
-	ignore = dirty
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/w0rp/ale.git
