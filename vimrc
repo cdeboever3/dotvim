@@ -40,8 +40,8 @@ autocmd BufNewFile	*.spec	call SKEL_spec()
 " filetypes
 filetype plugin indent on
 set background=dark
-au Filetype stan setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 textwidth=80 smarttab
-au Filetype python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 textwidth=80 smarttab
+au Filetype stan setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 textwidth=100 smarttab
+au Filetype python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4 textwidth=100 smarttab
 
 set nu
 set number
@@ -49,9 +49,9 @@ set ruler
 set backspace=indent,eol,start
 syntax on
 
-" highlight text over 80 columns
+" highlight text over 100 columns
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%>80v.\+/
+match OverLength /\%>100v.\+/
 
 " stuff for vim-latex
 set grepprg=grep\ -nH\ $*
